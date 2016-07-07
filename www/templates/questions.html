@@ -1,0 +1,24 @@
+<ion-view view-title="Choice #{{qNumber}}"  hide-back-button="true">
+    <ion-nav-buttons side="left">
+      <button class="button button-icon button-clear icon ion-arrow-left-c" ng-click="goBack()">
+      </button>
+    </ion-nav-buttons>
+    <ion-content class="padding">
+        <div class="card" ng-click="buttonClicked('A')">
+          <ion-radio class="item item-divider" >
+           <h2> <strong> Option A</strong></h2>
+          </ion-radio>
+          <div class="item item-text-wrap">
+           {{questionA.Text}}
+          </div>
+        </div>  
+        <div class="card" ng-click="buttonClicked('B')">
+          <ion-radio class="item item-divider">
+          <h2> <strong> Option B</strong></h2>
+          </ion-radio>
+          <div class="item item-text-wrap">
+            {{questionB.Text}}
+          </div>
+        </div>
+    </ion-content>
+</ion-view>

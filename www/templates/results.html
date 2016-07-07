@@ -1,0 +1,13 @@
+<ion-view  view-title="Results for TK Test">
+    <ion-nav-buttons side="left">
+        <button class="button" ng-click="menuButtonTapped()" ng-show="shouldShowButton">
+                    Menu
+                </button>
+    </ion-nav-buttons>
+    <ion-content class="padding">
+        <h1 style="color:red;">Results</h1>
+        <canvas id="radar" class="chart chart-radar" chart-data="data"  chart-labels="labels" height="250" chart-options="options"  chart-colours="colours"></canvas>
+    
+    
+    </ion-content>
+</ion-view>
